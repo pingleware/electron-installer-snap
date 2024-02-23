@@ -44,6 +44,10 @@ Available command-line options are displayed when you run `electron-installer-sn
 
 For the JavaScript API, please see the [API docs](https://electron-userland.github.io/electron-installer-snap/).
 
+## Changes by PINGLEWARE
+
+* add architecture option universal which returns amd64, arm64, armhf, i386
+
 ## Thanks
 
 Thank you to Canonical for the support in getting this module created, during the September 2017
