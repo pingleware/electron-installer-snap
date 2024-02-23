@@ -15,6 +15,7 @@
     "src"
   ],
   "scripts": {
+    "delete:dot:underscore": "sudo chmod +x delete_dot_underscore_files_recursive.sh && ./delete_dot_underscore_files_recursive.sh",
     "ava": "ava",
     "coverage": "nyc ava && nyc report --reporter=text-lcov > coverage.lcov",
     "docs:build": "node ci/build_docs.js",
