@@ -43,6 +43,8 @@ class Snapcraft {
       case 'armv7l':
       case 'arm':
         return 'armhf'
+      case 'universal':
+        return 'amd64 arm64 armhf i386'
       // arm64 => arm64
       default: return arch
     }

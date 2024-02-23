@@ -55,6 +55,9 @@ function parseArgs () {
   }).option('confinement', {
     describe: 'See: https://snapcraft.io/docs/reference/confinement',
     string: true
+  }).option('environments', {
+    describe: 'snapcraft environments',
+    string: true
   }).strict()
     .usage('$0\n\nBuilds a Snap for an already customized Electron app.\n' +
            'For more details on Snap-specific arguments, see the snapcraft syntax page:\n' +
