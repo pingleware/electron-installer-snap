@@ -1,6 +1,6 @@
 {
   "name": "@pingleware/electron-installer-snap",
-  "version": "5.3.0",
+  "version": "5.3.1",
   "description": "Build snapcraft packages for Electron applications",
   "author": "Mark Lee",
   "maintainers": [
@@ -32,7 +32,7 @@
     "test:fast": "cross-env FAST_TESTS_ONLY=1 npm test",
     "tsd": "tsd"
   },
-  "repository": "electron-userland/electron-installer-snap",
+  "repository": "pingleware/electron-installer-snap",
   "keywords": [
     "electron",
     "installer",
@@ -111,7 +111,7 @@
     "typedoc"
   ],
   "funding": {
-    "url": "https://github.com/electron-userland/electron-installer-snap?sponsor=1"
+    "url": "https://github.com/pingleware/electron-installer-snap?sponsor=1"
   },
   "husky": {
     "hooks": {
