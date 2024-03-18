@@ -28,6 +28,7 @@ test('translate node arches to snap arches', t => {
   t.is(snapcraft.translateArch('armv7l'), 'armhf', 'ARM v7')
   t.is(snapcraft.translateArch('arm'), 'armhf', 'generic ARM')
   t.is(snapcraft.translateArch('arm64'), 'arm64', '64-bit ARM')
+  t.is(snapcraft.translateArch('universal'), 'amd64 arm64 armhf i386', 'MULTI SNAP')
 })
 
 test('generateArgs flags and options', t => {

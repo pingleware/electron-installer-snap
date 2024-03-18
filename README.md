@@ -1,9 +1,8 @@
-# Electron Installer: Snap
+# Electron Installer: Snap Universal
 
-[![Build Status](https://github.com/electron-userland/electron-installer-snap/workflows/CI/badge.svg)](https://github.com/electron-userland/electron-installer-snap/actions?query=workflow:CI)
-[![Code Coverage](https://codecov.io/gh/electron-userland/electron-installer-snap/branch/master/graph/badge.svg)](https://codecov.io/gh/electron-userland/electron-installer-snap)
+Builds Snap files for Electron applications that have already been bundled and customized with the addition of universal architecture.
 
-Builds Snap files for Electron applications that have already been bundled and customized.
+When snapcraft.yaml specifies multiple architectures, a universal application is created containing the tag in the file name of -multi- to represent multiple architecture build in a single snap package. Similar for MacOS pkg which is a universal package for both x64 and arm64 applications and Windows APPX for holding multiple windows architectures.
 
 ## Requirements
 
@@ -13,12 +12,12 @@ Requires Node 10 or greater, and [`snapcraft`](https://snapcraft.io).
 
 The easiest way is to use [Electron Forge](https://electronforge.io) and enable the `snap` maker.
 
-To use this as a standalone CLI, install `electron-installer-snap` to your project:
+To use this as a standalone CLI, install `@pingleware/electron-installer-snap` to your project:
 
 ```shell
-npm install --save-dev electron-installer-snap
+npm install --save-dev @pingleware/electron-installer-snap
 # or
-yarn add --dev electron-installer-snap
+yarn add --dev @pingleware/electron-installer-snap
 ```
 
 Then add to your `package.json`:
